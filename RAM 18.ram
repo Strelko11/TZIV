@@ -1,0 +1,112 @@
+// 1 - nacitane cislo
+// 2 - pomocnyVypocet
+// 3 - modulo
+// 4 - pocet cislic zapisaneho cisla
+// 5 - vysledne binarne cislo
+// 6 - pomocny counter
+// 7 - nasobok
+
+
+read 1
+
+
+Modulo:
+load 1
+jzero End
+load 1
+div=2
+mul =2
+store 2
+load 1
+sub 2
+store 3
+
+jgzero Modulo1
+jzero Modulo0
+
+Modulo0:
+load 4
+jzero PrveCislo
+load 4 
+add = 1
+store 4
+load 6
+sub 6
+add 4
+store 6
+jump UpravaCisla
+
+
+Modulo1:
+load 4
+jzero PrveCislo
+load 6
+sub 6
+add 4
+store 6
+jump NoveCislo
+
+
+
+PrveCislo:
+load 5
+add 3
+store 5
+load 4
+add =1
+store 4
+jump UpravaCisla
+
+
+
+UpravaCisla:
+load 1
+div =2
+store 1
+jump Modulo
+
+
+
+NoveCislo:
+load 5
+jzero PrvaJednotka
+load 7
+sub 7
+add 3
+store 7
+jump NoveCislo1
+
+NoveCislo1:
+load 7
+mul=10
+store 7
+load 6
+sub=1
+store 6
+load 6
+jgzero NoveCislo1
+load 5
+add 7
+store 5
+load 4 
+add = 1
+store 4
+
+jump UpravaCisla
+
+
+PrvaJednotka:
+load 7
+add =1
+store 7
+jump NoveCislo1
+
+
+End:
+write 5
+halt
+
+
+
+
+	
