@@ -1,13 +1,17 @@
-// a,b,c,d,e,g,h
+// a,b,c,d,e,g,h,i,j,k,m
 
-x = {a,b,c,d,e,g,h}
-xA = {b,c,d,e,g,h}
-xB = {a,c,d,e,g,h}
-xC = {a,b,d,e,g,h}
-xD = {a,b,c,e,g,h}
-xE = {a,b,c,d,g,h}
-xG = {a,b,c,d,e,h}
-xH = {a,b,c,d,e,g}
+x = {a,b,c,d,e,g,h,i,j,k,m}
+xA = {b,c,d,e,g,h,i,j,k,m}
+xB = {a,c,d,e,g,h,i,j,k,m}
+xC = {a,b,d,e,g,h,i,j,k,m}
+xD = {a,b,c,e,g,h,i,j,k,m}
+xE = {a,b,c,d,g,h,i,j,k,m}
+xG = {a,b,c,d,e,h,i,j,k,m}
+xH = {a,b,c,d,e,g,i,j,k,m}
+xI = {a,b,c,d,e,g,h,i,j,k,m}
+xJ = {a,b,c,d,e,g,h,i,k,m}
+xK = {a,b,c,d,e,g,h,i,j,m}
+xM = {a,b,c,d,e,g,h,i,j,k}
 X = {A,B,C,D,E,G,H}
 X_ = {A_, B_, C_, D_, E_, G_, H_}
 x_ = {a_, b_, c_, d_, e_, g_, h_}
@@ -44,6 +48,10 @@ f(najdi_pismenko, d) = (oddelovac_D, d_, R)
 f(najdi_pismenko, e) = (oddelovac_E, e_, R)
 f(najdi_pismenko, g) = (oddelovac_G, g_, R)
 f(najdi_pismenko, h) = (oddelovac_H, h_, R)
+f(najdi_pismenko, i) = (oddelovac_I, i_, R)
+f(najdi_pismenko, j) = (oddelovac_J, j_, R)
+f(najdi_pismenko, k) = (oddelovac_K, k_, R)
+f(najdi_pismenko, m) = (oddelovac_M, m_, R)
 //f(najdi_pismenko_2, $) = (nove_slovo, $_, R)
 f(najdi_pismenko_2, $) = (potvrd_slovo_doprava, $_, R)
 f(najdi_pismenko_2, a) = (oddelovac_2_A, a_, R)
@@ -53,6 +61,10 @@ f(najdi_pismenko_2, d) = (oddelovac_2_D, d_, R)
 f(najdi_pismenko_2, e) = (oddelovac_2_G, e_, R)
 f(najdi_pismenko_2, g) = (oddelovac_2_E, g_, R)
 f(najdi_pismenko_2, h) = (oddelovac_2_H, h_, R)
+f(najdi_pismenko_2, i) = (oddelovac_2_H, h_, R)
+f(najdi_pismenko_2, j) = (oddelovac_2_H, h_, R)
+f(najdi_pismenko_2, k) = (oddelovac_2_H, h_, R)
+f(najdi_pismenko_2, m) = (oddelovac_2_H, h_, R)
 
 f(nove_slovo, x) = (zapis_1, x, R)
 f(nove_slovo, X) = (nove_slovo, X, R)
@@ -213,7 +225,6 @@ f(vynuluj_slovo_C, $) = (najdi_nove_slovo_C, $, R)
 f(najdi_nove_slovo_C, x) = (oddelovac_2_C, x, R)
 
 
-
 f(oddelovac_D,x)=(oddelovac_D,x, R)
 f(oddelovac_D, X_) = (oddelovac_D, X_, R)
 f(oddelovac_D,$) = (prve_pismeno_D,$, R)
@@ -333,9 +344,4 @@ f(najdi_H_H, $) = (vynuluj_slovo_H, $, L)
 f(vynuluj_slovo_H, X) = (vynuluj_slovo_H, x, L)
 f(vynuluj_slovo_H, $) = (najdi_nove_slovo_H, $, R)
 f(najdi_nove_slovo_H, x) = (oddelovac_2_H., x, R)
-
-
-
-
-
 
